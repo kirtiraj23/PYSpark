@@ -66,6 +66,18 @@ When data is exceptionaaly huge then it can be managed in following ways:
 
 ##### Parallel Operation Partitioned
 
-##### can use many data soyrces
+##### can use many data sources
+
+3. RDDs are lazily evaluated, immutable and Cacheable.
+
+4. we have two types of spark Operations
+---Transformations
+---Actions
+
+5. Transformations are a definition to implement
+
+6. Actions perform on the definition of Transformations.
+
+
 
 
