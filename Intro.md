@@ -34,6 +34,38 @@ When data is exceptionaaly huge then it can be managed in following ways:
 
 #### Distributed Storage-HDFS
 ##### -
+1. HDFS will use Blocks of Data with a size of 128 MB by default
 
+2. Each of these blocks is replicated 3 times.
+
+3. The blocks are distributed in this way to support fault tolerance.
+
+4. Smaller blocks will provide more parallelization during processing.
+
+5. Multiple copies of a block prevent loss of data due to failure of a node.
+
+#### Distributed Storage-MapReduce
+##### -
+
+1. MapReduce(MR) is a way of splitting a computation task to a distributed set of files.
+
+2. It consists of a Job Tracker and Multiple Task Trackers.
+
+3. The Job Tracker sends code to run on the Task Trackers.
+
+4. The Task Trackers allocate CPU and memory for the task and monitor the task on the worker nodes.
+
+#### Spark RDDs
+##### -
+1. RDD-- Resilient Distributed Systems
+
+2. It has four features:-
+##### Distributed Collection of data
+
+##### Fault Tolerant
+
+##### Parallel Operation Partitioned
+
+##### can use many data soyrces
 
 
